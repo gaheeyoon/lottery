@@ -1,0 +1,129 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 980px;
+}
+.img-980 {
+    display: block;
+    max-width: 980px;
+}
+.d-none {
+    display: none;
+}
+.message {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 2;
+    padding: 0 10px;
+    background: #ccc;
+    border-radius: 6px;
+    opacity: 0;
+    animation: message 3s linear;
+}
+    @keyframes message {
+        0% {
+            transform: translateX(-30px);
+            opacity: 0;
+        }
+        25% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+.lottery {
+    position: relative;
+}
+.lottery .bottom {
+    position: absolute;
+    width: 75%;
+    top: 11%;
+    left: 13%;
+}
+.lottery .wheel {
+    position: absolute;
+    width: 63%;
+    top: 14.7%;
+    left: 19%;
+}
+.lottery .great {
+    position: absolute;
+    width: 9%;
+    top: 11%;
+    left: 46%;
+}
+.lottery .lottery_btn {
+    position: absolute;
+    width: 17%;
+    top: 28.7%;
+    left: 42%;
+    cursor: pointer;
+}
+.lottery .info {
+    position: absolute;
+    width: 75%;
+    transform: translate(-50%,0%);
+    bottom: 1%;
+    left: 50%;
+}
+.copy {
+    max-width: 980px;
+    position: relative;
+}
+.copy .copy_btn {
+    display: block;
+    cursor: pointer;
+}
+.copy .code_img {
+    position: relative;
+    z-index: 2;
+}
+.copy .code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 0;
+}
+.clockdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2% 2% 2%;
+}
+.clockdiv .box {
+    display: flex;
+    align-items: flex-end;
+}
+.clockdiv .box span {
+    font-size: 3rem;
+}
+.clockdiv .box div {
+    font-size: 2.4rem;
+    letter-spacing: 6px;
+}
+
+@media screen and (max-width: 980px) {
+    .img-980 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    .clockdiv .box span {
+        font-size: 1.8rem;
+    }
+    .clockdiv .box div {
+        font-size: 1.4rem;
+        letter-spacing: 6px;
+    }
+}
